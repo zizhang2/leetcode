@@ -5,4 +5,5 @@
 
 
 bool test0007();
+bool test0064();
 bool test1431();

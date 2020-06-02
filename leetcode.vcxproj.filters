@@ -24,6 +24,9 @@
     <ClCompile Include="0007.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="0064.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="public.h">
