@@ -5,6 +5,7 @@
 
 
 bool test0007();
+bool test0009();
 bool test0046();
 bool test0064();
 bool test1431();

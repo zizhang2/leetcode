@@ -11,6 +11,14 @@ void test()
     {
         printf("--------0007:fail--------\n");
     }
+    if (test0009())
+    {
+        printf("--------0009:pass--------\n");
+    }
+    else
+    {
+        printf("--------0009:fail--------\n");
+    }
     if (test0046())
     {
         printf("--------0046:pass--------\n");
