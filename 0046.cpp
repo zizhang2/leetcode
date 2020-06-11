@@ -1,6 +1,4 @@
 #include "public.h"
-#include <vector>
-#include <algorithm>
 
 class Solution0046 
 {

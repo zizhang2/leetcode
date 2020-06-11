@@ -1,5 +1,4 @@
 #include "public.h"
-#include <vector>
 
 class Solution0009
 {
