@@ -31,7 +31,7 @@ public:
 };
 
 
-bool test0014()
+void test0014()
 {
     bool result = false;
 
@@ -49,5 +49,12 @@ bool test0014()
         result = true;
     }
 
-    return result;
+    if (result)
+    {
+        printf("--------0014:pass--------\n");
+    }
+    else
+    {
+        printf("--------0014:fail--------\n");
+    }
 }

@@ -37,9 +37,9 @@ public:
 };
 
 
-bool test0007()
+void test0007()
 {
-    bool ret = false;
+    bool result = false;
 
     Solution0007 so;
 
@@ -56,8 +56,15 @@ bool test0007()
         so.reverse(input2) == ret2 &&
         so.reverse(input3) == ret3)
     {
-        ret = true;
+        result = true;
     }
 
-    return ret;
+    if (result)
+    {
+        printf("--------0007:pass--------\n");
+    }
+    else
+    {
+        printf("--------0007:fail--------\n");
+    }
 }

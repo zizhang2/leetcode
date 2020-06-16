@@ -39,7 +39,7 @@ public:
     }
 };
 
-bool test0739()
+void test0739()
 {
     bool result = false;
 
@@ -53,5 +53,12 @@ bool test0739()
         result = true;
     }
 
-    return result;
+    if (result)
+    {
+        printf("--------0739:pass--------\n");
+    }
+    else
+    {
+        printf("--------0739:fail--------\n");
+    }
 }

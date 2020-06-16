@@ -3,15 +3,18 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <map>
+#include <list>
 #include <string>
 #include <vector>
+#include <sstream>
 #include <algorithm>
 
 
-bool test0007();
-bool test0009();
-bool test0014();
-bool test0046();
-bool test0064();
-bool test0739();
-bool test1431();
+void test0007();
+void test0009();
+void test0014();
+void test0046();
+void test0064();
+void test0297();
+void test0739();
+void test1431();

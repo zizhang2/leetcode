@@ -33,9 +33,9 @@ public:
 };
 
 
-bool test1431()
+void test1431()
 {
-    bool ret = false;
+    bool result = false;
 
     Solution1431 so;
 
@@ -55,8 +55,15 @@ bool test1431()
         so.kidsWithCandies(candies2, extraCandies2) == ret2 &&
         so.kidsWithCandies(candies3, extraCandies3) == ret3)
     {
-        ret = true;
+        result = true;
     }
 
-    return ret;
+    if (result)
+    {
+        printf("--------1431:pass--------\n");
+    }
+    else
+    {
+        printf("--------1431:fail--------\n");
+    }
 }

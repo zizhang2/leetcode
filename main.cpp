@@ -3,62 +3,14 @@
 
 void test()
 {
-    if (test0007())
-    {
-        printf("--------0007:pass--------\n");
-    }
-    else
-    {
-        printf("--------0007:fail--------\n");
-    }
-    if (test0009())
-    {
-        printf("--------0009:pass--------\n");
-    }
-    else
-    {
-        printf("--------0009:fail--------\n");
-    }
-    if (test0014())
-    {
-        printf("--------0014:pass--------\n");
-    }
-    else
-    {
-        printf("--------0014:fail--------\n");
-    }
-    if (test0046())
-    {
-        printf("--------0046:pass--------\n");
-    }
-    else
-    {
-        printf("--------0046:fail--------\n");
-    }
-    if (test0064())
-    {
-        printf("--------0064:pass--------\n");
-    }
-    else
-    {
-        printf("--------0064:fail--------\n");
-    }
-    if (test0739())
-    {
-        printf("--------0739:pass--------\n");
-    }
-    else
-    {
-        printf("--------0739:fail--------\n");
-    }
-    if (test1431())
-    {
-        printf("--------1431:pass--------\n");
-    }
-    else
-    {
-        printf("--------1431:fail--------\n");
-    }
+    test0007();
+    test0009();
+    test0014();
+    test0046();
+    test0064();
+    test0297();
+    test0739();
+    test1431();
 }
 
 

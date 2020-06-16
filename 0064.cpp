@@ -11,9 +11,9 @@ public:
 };
 
 
-bool test0064()
+void test0064()
 {
-    bool ret = false;
+    bool result = false;
 
     Solution0064 so;
 
@@ -26,8 +26,15 @@ bool test0064()
     if (so.sumNums(input1) == ret1 &&
         so.sumNums(input2) == ret2)
     {
-        ret = true;
+        result = true;
     }
 
-    return ret;
+    if (result)
+    {
+        printf("--------0064:pass--------\n");
+    }
+    else
+    {
+        printf("--------0064:fail--------\n");
+    }
 }
