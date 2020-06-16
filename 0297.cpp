@@ -10,6 +10,44 @@ struct TreeNode
     }
 };
 
+
+void recur_delete(TreeNode* node)
+{
+    if (node == nullptr)
+    {
+        return;
+    }
+    if (node->left)
+    {
+        recur_delete(node->left);
+    }
+
+    if (node->right)
+    {
+        recur_delete(node->right);
+    }
+
+    delete node;
+    node = nullptr;
+}
+
+
+bool operator==(TreeNode& lhs, TreeNode& rhs)
+{
+    bool result = false;
+    if (lhs.val == rhs.val)
+    {
+        if ((lhs.left && rhs.left && ((*lhs.left) == *(rhs.left)))
+            || (lhs.left == nullptr && rhs.left == nullptr) &&
+            (lhs.right && rhs.right && ((*lhs.right) == *(rhs.right)))
+                || (lhs.right == nullptr && rhs.right == nullptr))
+        {
+            result = true;
+        }
+    }
+    return result;
+}
+
 class Codec
 {
 public:
@@ -206,22 +244,24 @@ void test0297()
     i1_l1_right.left = &i1_l2_left1;
     i1_l1_right.right = &i1_l2_right1;
 
-    std::string ret1 = "1_2_3_ _ _4_5";
+    //std::string ret1 = "1_2_3_ _ _4_5";
 
     TreeNode input2(1);
     TreeNode i2_l1_right(2);
     input2.right = &i2_l1_right;
-    std::string ret2 = "1_ _2";
+    //std::string ret2 = "1_ _2";
 
-    if (codec.serialize(&input1) == ret1 &&
-        codec.serialize(&input2) == ret2)
+    TreeNode* ret1 = codec.deserialize(codec.serialize(&input1));
+    TreeNode* ret2 = codec.deserialize(codec.serialize(&input2));
+
+    if (*ret1 == input1 && *ret2 == input2)
     {
         result = true;
     }
 
-    codec.deserialize(ret1);
-    codec.deserialize(ret2);
-    
+    recur_delete(ret1);
+    recur_delete(ret2);
+
     if (result)
     {
         printf("--------0297:pass--------\n");
